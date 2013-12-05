@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>hw1-chenw1-typesystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <types>
+    <typeDescription>
+      <name>hw1.Verb</name>
+      <description/>
+      <supertypeName>hw1.Base</supertypeName>
+    <features>
+        <featureDescription>
+          <name>content</name>
+          <description>The actual content of the verb.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>hw1.QAMark</name>
+      <description/>
+      <supertypeName>hw1.Base</supertypeName>
+    <features>
+        <featureDescription>
+          <name>isQuestion</name>
+          <description>A boolean variable indicating whether this line is a question or an answer.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>hw1.Lable</name>
+      <description/>
+      <supertypeName>hw1.Base</supertypeName>
+    <features>
+        <featureDescription>
+          <name>lable</name>
+          <description>A boolean variable indicating whether this answer is labled as + or -.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>hw1.Other</name>
+      <description/>
+      <supertypeName>hw1.Base</supertypeName>
+    <features>
+        <featureDescription>
+          <name>content</name>
+          <description>The content of the text segment that has nothing to do with the task we are trying to accomplish in hw1.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>hw1.Person</name>
+      <description/>
+      <supertypeName>hw1.Base</supertypeName>
+      <features>
+        <featureDescription>
+          <name>isSubject</name>
+          <description>A boolean variable indicating whether this person is the subject or an object in the sentence.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>name</name>
+          <description>The name of this person.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>hw1.Base</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>source</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>confidence</name>
+          <description>The confidence score we assign to this source.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
