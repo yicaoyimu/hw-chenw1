@@ -4,6 +4,11 @@
   <groupId>edu.cmu.lti.11791.f13.hw1</groupId>
   <artifactId>hw1-chenw1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <scm>
+    <connection>scm:git:git@github.com:yicaoyimu/hw1-chenw1.git</connection>
+    <developerConnection>scm:git:git@github.com:yicaoyimu/hw1-chenw1.git</developerConnection>
+  </scm>
+
   <repositories>
     <repository>
       <id>oaqa</id>
